@@ -66,3 +66,7 @@ function msToTime(s) {
 		secs + 's'
 	);
 }; /* by: victoryqwei / project: blockcraft */
+
+function replaceAll(string, find, replace) {
+  return string.replace(new RegExp(escapeRegExp(find), 'g'), replace);
+};

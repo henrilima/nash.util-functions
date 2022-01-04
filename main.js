@@ -18,11 +18,11 @@ function randomRgb() {
   var num = Math.round(0xffffff * Math.random());
   var x1 = num >> 16, x2 = num >> 8 & 255, x3 = num & 255;
   return `rgb(${x1},${x2},${x3})`;
-}; /* by: victoryqwei / project: blockcraft (Modified) */
+};
 
 function randomHEX() {
 	return "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
-}; /* by: victoryqwei / project: blockcraft (Modified) */
+};
 
 function randomNumber(max, min) {
 	return Math.random() * (max - min) + min;
@@ -47,7 +47,7 @@ function abbreviateNumber(value) {
         newValue = shortValue+suffixes[suffixNum];
     }
     return newValue;
-}; /* by: victoryqwei / project: blockcraft */
+};
 
 function msToTime(s) {
     let ms = s % 1000;
@@ -65,7 +65,7 @@ function msToTime(s) {
 		(mins > 0 ? mins + 'm ' : '') + 
 		secs + 's'
 	);
-}; /* by: victoryqwei / project: blockcraft */
+};
 
 function replaceAll(string, find, replace) {
   return string.replace(new RegExp(escapeRegExp(find), 'g'), replace);

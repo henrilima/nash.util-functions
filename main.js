@@ -35,7 +35,7 @@ function randomInt(max) {
 function abbreviateNumber(value) {
     var newValue = value;
     if (value >= 1000) {
-        var suffixes = ["", "k", "m", "b","t"];
+        var suffixes = ["", "k", "m", "b", "t"];
         var suffixNum = Math.floor( (""+value).length/3 );
         var shortValue = '';
         for (var precision = 2; precision >= 1; precision--) {
